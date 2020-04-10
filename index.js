@@ -2,6 +2,8 @@ const express = require ('express');
 const Joi = require('joi');
 const app = express();
 
+app.use(express.json());
+
 const genres = [
     {id: 1, genre:"thriller"},
     {id: 2, genre:"action"},
@@ -13,8 +15,8 @@ app.get('api/films/genre',(req,res)=>{
     res.send(genres);
 })
 
-app.get('/api/films/:genre', (req,res)=>{ 
-    const filmsGenre = genres.find(f => f.genre === req.params.genre);
+app.get('/api/films/:id', (req,res)=>{ 
+    const filmsGenre = genres.find(f => f.id === req.params.id);
     if (!filmsGenre) return res.status(404).send('Genre not found');
     
     res.send(filmsGenre);
@@ -33,8 +35,8 @@ app.post('/api/films/genre', (req,res)=>{
     res.send(newGenre);
 })
 
-app.put('/api/films/:genre', (req,res)=>{
-    const genreEdit = genres.find(g  => g.genre === req.params.genre);
+app.put('/api/films/:id', (req,res)=>{
+    const genreEdit = genres.find(g  => g.id === req.params.id);
     if (!genreEdit) return res.status(404).send('Genre not found');
     
     const {error} = validateGenre(req.body);
@@ -44,8 +46,8 @@ app.put('/api/films/:genre', (req,res)=>{
     res.send(genreToEdit);
 })
 
-app.delete('/api/films/:genre', (req,res)=>{
-    const genreDelete = genres.find(g => g.genre === req.params.genre);
+app.delete('/api/films/:id', (req,res)=>{
+    const genreDelete = genres.find(g => g.id === req.params.id);
     if (!genreDelete) return res.status(404).send('Genre not found');
 
     const index = genres.indexOf(genreDelete);
@@ -55,11 +57,12 @@ app.delete('/api/films/:genre', (req,res)=>{
 
 function validateGenre(genre){
     const schema = {
-        genre: Joi.required()
+        genre: Joi.min(3).required()
     }
     return Joi.validate(genre, schema);
 }
 
-app.listen(4110, ()=> {
-    console.log('listening on port 4110');
+const port = process.env.PORT || 4110
+app.listen(port, ()=> {
+    console.log(`listening on port ${port}`);
 })
