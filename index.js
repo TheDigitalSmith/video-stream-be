@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 const {auth,log} = require ('./middleware/logger');
 const morgan = require('morgan');
 const genreService = require('./src/routes/genres');
+const customerService = require ('./src/routes/customers');
 const mongoose = require('mongoose');
 
 const app = express();
@@ -24,6 +25,7 @@ mongoose.connect(process.env.MONGODB_URL, {useNewUrlParser:true, useUnifiedTopol
 .then(db => console.log('MongoDb connected'), err=> console.log('Failed to connect to MongoDB', err))
 
 app.use('/api/films/genre', genreService);
+app.use('/api/customer', customerService);
 
 const port = process.env.PORT || 4110
 app.listen(port, ()=> {
