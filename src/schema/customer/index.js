@@ -23,5 +23,5 @@ function validateCustomer(customer){
     })
     return Joi.validate(customer, schema);
 }
-module.exports= {Customer,
+module.exports= {Customer, customerSchema, 
 validate: validateCustomer};

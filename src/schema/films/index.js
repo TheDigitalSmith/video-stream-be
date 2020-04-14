@@ -39,4 +39,4 @@ function validateFilms(film){
     return Joi.validate(film, schema)
 }
 
-module.exports = {Film, validate: validateFilms};
+module.exports = {Film, filmSchema, validate: validateFilms};
