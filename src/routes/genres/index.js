@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Joi = require("joi");
-const {Genre, validate} = require("../../schema/genre");
+const { Genre, validate } = require("../../schema/genre");
 
 // const genres = [
 //     {id: 1, genre:"thriller"},
@@ -11,8 +11,8 @@ const {Genre, validate} = require("../../schema/genre");
 // ]
 
 router.get("/", async (req, res) => {
-  const genres = await Genre.find({}).sort({name: 1});
-  
+  const genres = await Genre.find({}).sort({ name: 1 });
+
   res.send(genres);
 });
 
@@ -31,8 +31,8 @@ router.post("/", async (req, res) => {
     ...req.body,
   });
   try {
-    const result = await newGenre.save();
-    res.send(result);
+    await newGenre.save();
+    res.send(newGenre);
   } catch (err) {
     console.log(err);
     res.status(500).send(err);
@@ -43,11 +43,15 @@ router.put("/:id", async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const genreEdit = await Genre.findByIdAndUpdate(req.params.id, {
-    $set: {
-      ...req.body,
+  const genreEdit = await Genre.findByIdAndUpdate(
+    req.params.id,
+    {
+      $set: {
+        ...req.body,
+      },
     },
-  }, {new: true});
+    { new: true }
+  );
   if (!genreEdit) return res.status(404).send("Genre not found");
 
   res.send(genreEdit);
