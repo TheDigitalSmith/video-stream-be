@@ -1,6 +1,5 @@
 const express = require('express');
-const Joi = require('joi');
-const Customer = require('../../schema/customer');
+const {Customer, validate} = require('../../schema/customer');
 
 const router = express.Router();
 
@@ -27,7 +26,7 @@ router.get('/:id', async(req,res)=>{
 
 router.post('/', async(req,res)=>{
     try {
-        const {error} = validateCustomer(req.body);
+        const {error} = validate(req.body);
         if(error) return res.status(400).send(error.details[0].message);
 
         let newUser = new Customer ({...req.body});
@@ -41,7 +40,7 @@ router.post('/', async(req,res)=>{
 
 router.put('/:id', async(req,res)=>{
     try{
-    const {error} = validateCustomer(req.body);
+    const {error} = validate(req.body);
     if(error) return res.status(400).send(error.details[0].message);
 
     delete req.body._id ;
@@ -67,14 +66,5 @@ router.delete('/:id', async(req,res)=>{
         res.status(500).send(err);
     }
 })
-
-function validateCustomer(customer){
-    const schema = Joi.object({
-        isGold: Joi.boolean(),
-        name: Joi.string().min(5).max(50).required(),
-        phone: Joi.string().min(5).max(50).required()
-    })
-    return Joi.validate(customer, schema);
-}
 
 module.exports = router; 

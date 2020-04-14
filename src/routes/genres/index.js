@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Joi = require("joi");
-const Genre = require("../../schema/genre");
+const {Genre, validate} = require("../../schema/genre");
 
 // const genres = [
 //     {id: 1, genre:"thriller"},
@@ -24,7 +24,7 @@ router.get("/:id", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const { error } = validateGenre(req.body);
+  const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
   const newGenre = new Genre({
@@ -40,7 +40,7 @@ router.post("/", async (req, res) => {
 });
 
 router.put("/:id", async (req, res) => {
-  const { error } = validateGenre(req.body);
+  const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
   const genreEdit = await Genre.findByIdAndUpdate(req.params.id, {
@@ -58,12 +58,5 @@ router.delete("/:id", async (req, res) => {
   if (!genreDelete) return res.status(404).send("Genre not found");
   res.send(genreDelete);
 });
-
-function validateGenre(genre) {
-  const schema = Joi.object ({
-    genre: Joi.string().min(3).required(),
-  });
-  return Joi.validate(genre, schema);
-}
 
 module.exports = router;
