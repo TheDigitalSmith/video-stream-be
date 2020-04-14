@@ -6,6 +6,7 @@ const {auth,log} = require ('./middleware/logger');
 const morgan = require('morgan');
 const genreService = require('./src/routes/genres');
 const customerService = require ('./src/routes/customers');
+const filmService = require('./src/routes/films');
 const mongoose = require('mongoose');
 
 const app = express();
@@ -26,6 +27,8 @@ mongoose.connect(process.env.MONGODB_URL, {useNewUrlParser:true, useUnifiedTopol
 
 app.use('/api/films/genre', genreService);
 app.use('/api/customer', customerService);
+app.use('/api/films', filmService);
+
 
 const port = process.env.PORT || 4110
 app.listen(port, ()=> {
