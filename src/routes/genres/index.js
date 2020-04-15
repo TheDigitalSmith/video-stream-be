@@ -1,8 +1,9 @@
+const auth = require("../../utils/middleware/auth");
 const express = require("express");
 const router = express.Router();
 const Joi = require("joi");
 const { Genre, validate } = require("../../schema/genre");
-
+const admin = require('../../utils/middleware/admin');
 // const genres = [
 //     {id: 1, genre:"thriller"},
 //     {id: 2, genre:"action"},
@@ -23,7 +24,7 @@ router.get("/:id", async (req, res) => {
   res.send(filmsGenre);
 });
 
-router.post("/", async (req, res) => {
+router.post("/", auth, async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -39,7 +40,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", auth, async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -57,10 +58,10 @@ router.put("/:id", async (req, res) => {
   res.send(genreEdit);
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", [auth, admin], async (req, res) => {
   const genreDelete = await Genre.findByIdAndRemove(req.params.id);
   if (!genreDelete) return res.status(404).send("Genre not found");
-  res.send(genreDelete);
+  res.send({status:'removed successfully',genre:genreDelete});
 });
 
 module.exports = router;

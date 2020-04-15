@@ -11,6 +11,7 @@ const customerService = require ('./src/routes/customers');
 const filmService = require('./src/routes/films');
 const rentalService = require('./src/routes/rentals');
 const registrationService = require( './src/routes/user');
+const authenticationService = require('./src/utils/auth');
 const mongoose = require('mongoose');
 
 const app = express();
@@ -34,6 +35,7 @@ app.use('/api/customer', customerService);
 app.use('/api/films', filmService);
 app.use('/api/rentals', rentalService);
 app.use('/api/users', registrationService);
+app.use('/api/auth', authenticationService);
 
 const port = process.env.PORT || 4110
 app.listen(port, ()=> {
