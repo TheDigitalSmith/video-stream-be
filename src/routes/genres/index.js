@@ -11,17 +11,24 @@ const admin = require('../../utils/middleware/admin');
 //     {id: 4, genre:"horror"}
 // ]
 
-router.get("/", async (req, res) => {
-  const genres = await Genre.find({}).sort({ name: 1 });
-
-  res.send(genres);
+router.get("/", async (req, res, next) => {
+  try{
+    const genres = await Genre.find({}).sort({ name: 1 });
+    res.send(genres);
+  }catch(err){
+    next(err)
+  }
 });
 
 router.get("/:id", async (req, res) => {
-  const filmsGenre = await Genre.findById(req.params.id);
-  if (!filmsGenre) return res.status(404).send("Genre not found");
+  try{
+    const filmsGenre = await Genre.findById(req.params.id);
+    if (!filmsGenre) return res.status(404).send("Genre not found");
+    res.send(filmsGenre);
+  }catch(err){
+    res.status(500).send(err);
+  }
 
-  res.send(filmsGenre);
 });
 
 router.post("/", auth, async (req, res) => {
