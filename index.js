@@ -1,3 +1,6 @@
+const winston = require('winston');
+require('winston-mongodb');
+require('express-async-errors');
 const Joi = require('joi');
 Joi.objectId = require('joi-objectid')(Joi);
 const debug = require('debug')('app:startup');
@@ -17,6 +20,22 @@ const mongoose = require('mongoose');
 
 const app = express();
 dotenv.config();
+
+// process.on('uncaughtException', (ex)=>{
+//     winston.error(ex.message,ex)
+//     process.exit(1);
+// })
+
+winston.handleExceptions( new winston.transports.File({filename:'uncaughtExceptions.log'}))
+
+process.on('unhandledRejection', (ex)=>{
+    winston.error(ex.message, ex)
+    process.exit(1);
+    // throw ex
+})
+
+winston.add(winston.transports.File,{filename: 'logfile.log'});
+winston.add(winston.transports.MongoDB,{db: process.env.MONGODB_URL});
 
 app.use(express.json());
 app.use(log);
