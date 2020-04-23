@@ -9,6 +9,6 @@ module.exports = function () {
       useFindAndModify: false,
     })
     .then(
-      (db) => winston.info("MongoDb connected"),
+      (db) => winston.info(`MongoDb connected ${process.env.MONGODB_URL}`),
     );
 };

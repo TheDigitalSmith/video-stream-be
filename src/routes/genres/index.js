@@ -5,6 +5,7 @@ const router = express.Router();
 const Joi = require("joi");
 const { Genre, validate } = require("../../schema/genre");
 const admin = require("../../utils/middleware/admin");
+const validateObjectId = require('../../utils/middleware/validateObjectId');
 // const genres = [
 //     {id: 1, genre:"thriller"},
 //     {id: 2, genre:"action"},
@@ -17,7 +18,7 @@ router.get("/", async (req, res, next) => {
   res.send(genres);
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", validateObjectId ,async (req, res) => {
   const filmsGenre = await Genre.findById(req.params.id);
   if (!filmsGenre) return res.status(404).send("Genre not found");
   res.send(filmsGenre);

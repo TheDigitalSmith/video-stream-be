@@ -12,3 +12,423 @@
 {"level":"info","message":"MongoDb connected","timestamp":"2020-04-18T10:25:05.921Z"}
 {"level":"info","message":"listening on port 4112","timestamp":"2020-04-18T10:25:11.187Z"}
 {"level":"info","message":"MongoDb connected","timestamp":"2020-04-18T10:25:11.236Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T17:23:53.596Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T17:23:53.671Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T17:42:48.196Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T17:42:48.295Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T17:44:25.477Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T17:44:25.581Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T17:47:20.796Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T17:47:20.844Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T17:51:11.926Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T17:51:11.996Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T17:52:11.404Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T17:52:11.458Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T17:54:37.400Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T17:54:37.448Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T17:55:10.957Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T17:55:11.012Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T18:12:07.463Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T18:12:07.520Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T18:13:49.517Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T18:13:49.601Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T18:18:05.090Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T18:18:05.169Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T18:18:25.953Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T18:18:26.052Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T18:20:46.537Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T18:20:46.579Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T18:23:43.773Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T18:23:43.831Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T18:24:12.561Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T18:24:12.599Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T18:29:00.386Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T18:29:00.461Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T18:39:57.136Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T18:39:57.184Z"}
+{"message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\error\\cast.js:29:11)\n    at model.Query.exec (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\query.js:4340:21)\n    at model.Query.Object.<anonymous>.Query.then (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\query.js:4432:15)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","name":"CastError","stringValue":"\"1\"","value":"1","path":"_id","reason":{},"level":"error","timestamp":"2020-04-19T18:39:57.368Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T18:49:21.442Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T18:49:21.480Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-19T18:51:29.503Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-19T18:51:29.545Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T09:49:00.404Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T09:49:00.491Z"}
+{"message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\error\\cast.js:29:11)\n    at model.Query.exec (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\query.js:4340:21)\n    at model.Query.Object.<anonymous>.Query.then (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\query.js:4432:15)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","name":"CastError","stringValue":"\"1\"","value":"1","path":"_id","reason":{},"level":"error","timestamp":"2020-04-22T09:49:00.732Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T09:52:57.298Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T09:52:57.329Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T09:59:51.101Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T09:59:51.170Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T10:02:54.601Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T10:02:54.636Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T10:03:54.692Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T10:03:54.727Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T10:04:19.023Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T10:04:19.056Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T10:07:25.977Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T10:07:26.017Z"}
+{"message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\error\\cast.js:29:11)\n    at model.Query.exec (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\query.js:4340:21)\n    at model.Query.Object.<anonymous>.Query.then (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\query.js:4432:15)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","name":"CastError","stringValue":"\"1\"","value":"1","path":"_id","reason":{},"level":"error","timestamp":"2020-04-22T10:07:26.273Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T10:07:56.733Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T10:07:56.776Z"}
+{"message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\error\\cast.js:29:11)\n    at model.Query.exec (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\query.js:4340:21)\n    at model.Query.Object.<anonymous>.Query.then (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\node_modules\\mongoose\\lib\\query.js:4432:15)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","name":"CastError","stringValue":"\"1\"","value":"1","path":"_id","reason":{},"level":"error","timestamp":"2020-04-22T10:07:56.947Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T10:11:19.895Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T10:11:19.978Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T12:56:33.884Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T12:56:33.977Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T13:22:12.498Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T13:22:12.537Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T13:23:27.849Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T13:23:27.886Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T14:54:53.524Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T14:54:53.554Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T15:19:02.482Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T15:19:02.514Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T15:19:23.759Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T15:19:23.789Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T15:20:31.472Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T15:20:31.501Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T15:27:56.484Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T15:27:56.514Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T15:30:54.039Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T15:30:54.073Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T15:31:42.651Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T15:31:42.701Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T16:14:22.090Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T16:14:22.119Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T16:38:57.186Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T16:38:57.211Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:09:49.064Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:09:49.103Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:09:50.811Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:09:50.903Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:14:10.551Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:14:10.590Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:14:11.887Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:14:11.976Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:16:44.556Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:16:44.602Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:16:46.271Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:16:46.378Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:17:31.028Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:17:31.123Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:17:31.727Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:17:31.916Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:20:52.346Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:20:52.398Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:20:53.921Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:20:54.085Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:23:07.566Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:23:07.607Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:23:08.850Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:23:08.995Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:39:03.679Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:39:03.723Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:39:05.069Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:39:05.228Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:50:04.559Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:50:04.601Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:50:05.368Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:50:05.495Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:51:45.191Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:51:45.223Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:51:46.488Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:51:46.574Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:52:18.501Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:52:18.533Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:52:19.731Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:52:19.870Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:55:36.822Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:55:36.897Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:55:37.548Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:55:37.705Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:57:43.083Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:57:43.151Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:57:44.468Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:57:44.549Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:59:00.046Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:59:00.091Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T17:59:01.348Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T17:59:01.439Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:17:17.035Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:17:17.137Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:17:17.196Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:17:17.205Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:19:19.440Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:19:19.608Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:19:19.975Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:19:20.066Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:20:43.335Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:20:43.434Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:20:43.470Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:20:43.528Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:21:43.269Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:21:43.430Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:21:43.473Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:21:43.483Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:23:55.248Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:23:55.299Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:23:59.251Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:23:59.543Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:25:40.962Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:25:41.069Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:25:42.399Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:25:42.489Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:28:04.334Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:28:04.372Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:28:05.952Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:28:06.089Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:29:17.766Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:29:17.800Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:29:18.809Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:29:18.882Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:37:33.085Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:37:33.153Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:37:33.700Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:37:33.825Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:37:50.181Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:37:50.262Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T18:37:50.886Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T18:37:51.018Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:01:10.735Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:01:10.770Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:01:10.973Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:01:11.168Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2020-04-22T20:01:11.247Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:16:16.942Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:16:17.167Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:16:17.260Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:16:17.333Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:17:59.223Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:17:59.365Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:17:59.488Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:17:59.590Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2020-04-22T20:18:00.073Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:21:26.673Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:21:26.825Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:21:26.846Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:21:26.906Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2020-04-22T20:21:27.330Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2020-04-22T20:21:27.360Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:23:03.475Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:23:03.573Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:23:03.693Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:23:03.802Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:32:23.514Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:32:23.559Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:32:24.226Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:32:24.574Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:33:37.050Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:33:37.219Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:33:37.274Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:33:37.329Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:35:00.611Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:35:00.660Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:35:01.490Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:35:01.607Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:37:30.148Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:37:30.329Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:37:30.818Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:37:30.936Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:41:32.116Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:41:32.057Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:41:32.152Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:41:32.198Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2020-04-22T20:41:32.459Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:43:17.413Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:43:17.448Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2020-04-22T20:43:17.846Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:43:17.906Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:43:18.110Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:43:33.795Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:43:33.873Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2020-04-22T20:43:34.221Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:43:34.424Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:43:34.510Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:43:56.845Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:43:56.938Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:43:57.040Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:43:57.092Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2020-04-22T20:43:57.404Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:47:36.895Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:47:37.004Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:47:37.014Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:47:37.113Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:47:55.649Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:47:55.720Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:47:56.384Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:47:56.499Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:53:23.390Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:53:23.305Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:53:23.433Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:53:23.474Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:53:51.376Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:53:51.426Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:53:52.694Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:53:52.880Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:54:12.977Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:54:13.033Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:54:14.407Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:54:14.574Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:54:32.965Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:54:33.013Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T20:54:33.607Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T20:54:33.798Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:07:20.463Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:07:20.509Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:07:20.486Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:07:20.657Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:08:11.097Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:08:11.315Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:08:12.018Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:08:12.076Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:10:45.674Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:10:45.780Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:10:45.747Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:10:45.945Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:11:21.595Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:11:21.793Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:11:21.885Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:11:21.935Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:12:26.065Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:12:26.276Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:12:27.372Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:12:27.485Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:15:13.488Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:15:13.548Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:15:13.844Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:15:14.111Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:41:43.655Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:41:43.445Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:41:43.716Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:41:43.742Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:43:16.288Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:43:16.443Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:43:16.435Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:43:16.489Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:43:47.585Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:43:47.683Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:43:48.396Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:43:48.436Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:47:26.202Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:47:26.405Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:47:27.730Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:47:27.785Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:47:46.379Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:47:46.430Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:47:46.437Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:47:46.780Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:48:14.357Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:48:14.284Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:48:14.398Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:48:14.437Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:49:49.823Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:49:49.948Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:49:49.991Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:49:50.026Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:50:08.730Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:50:08.848Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:50:08.768Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:50:08.963Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:52:13.425Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:52:13.624Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:52:14.300Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:52:14.347Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:54:14.239Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:54:14.548Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:54:14.722Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:54:14.802Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:54:46.649Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:54:46.724Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:54:46.788Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:54:46.809Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:57:09.287Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:57:09.378Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:57:09.425Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:57:09.442Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:57:50.895Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:57:51.085Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T21:57:51.513Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T21:57:51.565Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:00:31.119Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:00:31.258Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:00:31.638Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:00:31.682Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:00:53.029Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:00:53.202Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:00:53.229Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:00:53.248Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:01:08.469Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:01:08.556Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:01:08.549Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:01:08.693Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:01:23.278Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:01:23.399Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:01:23.448Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:01:23.497Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:02:58.705Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:02:58.836Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:02:58.909Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:02:58.953Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:03:19.164Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:03:19.285Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:03:19.296Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:03:19.345Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:03:49.959Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:03:50.068Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:03:50.061Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:03:50.126Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:04:14.312Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:04:14.409Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:04:14.438Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:04:14.495Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:06:11.850Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:06:11.984Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:06:12.864Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:06:12.921Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:06:27.746Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:06:27.861Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:06:27.903Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:06:27.949Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:07:28.120Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:07:28.281Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:07:28.869Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:07:28.913Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:07:47.383Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:07:47.442Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:07:47.525Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:07:47.668Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:08:23.070Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:08:23.159Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:08:23.192Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:08:23.211Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:10:21.413Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:10:21.625Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:10:22.298Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:10:22.363Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:10:50.813Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:10:50.731Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:10:50.849Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:10:50.885Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:11:11.229Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:11:11.334Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:11:11.414Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:11:11.453Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:14:52.418Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:14:52.672Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:14:53.964Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:14:54.029Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:15:22.575Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:15:22.656Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:15:22.700Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:15:22.709Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:16:33.116Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:16:33.216Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:16:33.254Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:16:33.270Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:17:30.717Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:17:30.837Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:17:31.540Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:17:31.607Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:18:10.184Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:18:10.323Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-22T22:18:11.314Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-22T22:18:11.396Z"}

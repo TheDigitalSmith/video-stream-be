@@ -14,6 +14,8 @@ require("winston-mongodb");
 require('express-async-errors');
 
 const port = process.env.PORT || 4110
-app.listen(port, ()=> {
+const server = app.listen(port, ()=> {
     winston.info(`listening on port ${port}`);
 })
+
+module.exports = server;
