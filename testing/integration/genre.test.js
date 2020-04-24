@@ -98,7 +98,7 @@ describe('/api/genres',()=>{
         let token
         let name
         let endPoint
-        let objectId = mongoose.Types.ObjectId();
+        let objectId
         const exec = async() =>{
             return await request(server)
             .put(endPoint)
@@ -110,6 +110,7 @@ describe('/api/genres',()=>{
             token = new User().generateAuthToken();
             name = 'genrePUT';
             endPoint = '/api/films/genre/' + objectId
+            objectId = mongoose.Types.ObjectId();
         })
 
         it('should return a 401 if user is not logged in', async()=>{

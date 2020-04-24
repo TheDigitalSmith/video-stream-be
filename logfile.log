@@ -469,3 +469,7 @@
 {"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-24T16:49:31.064Z"}
 {"level":"info","message":"listening on port 4112","timestamp":"2020-04-24T16:49:31.779Z"}
 {"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-24T16:49:31.863Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-24T16:58:08.335Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-24T16:58:08.508Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-04-24T16:58:09.408Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-04-24T16:58:09.475Z"}
