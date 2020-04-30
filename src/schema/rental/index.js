@@ -29,7 +29,7 @@ const customerSchema = new mongoose.Schema({
 })
 
 const rentalSchema = new mongoose.Schema({
-    user:{
+    customer:{
         type: customerSchema,
         required: true
     },
