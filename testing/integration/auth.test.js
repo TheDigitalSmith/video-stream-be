@@ -1,9 +1,9 @@
 const request = require('supertest');
 const {User} = require('../../src/schema/user');
 const {Genre} = require('../../src/schema/genre');
-let server
 
 describe('auth middleware',()=>{
+    let server
     let token;
 
     beforeEach(()=>{
@@ -11,8 +11,8 @@ describe('auth middleware',()=>{
         token = new User().generateAuthToken();
     });
     afterEach(async()=>{
-        server.close()
-        await Genre.remove();
+        await Genre.remove({});
+        await server.close()
     });
 
     const exec = () =>{

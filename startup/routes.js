@@ -1,4 +1,5 @@
 const express = require('express');
+const returnService = require('../src/routes/returns');
 const genreService = require("../src/routes/genres/");
 const customerService = require("../src/routes/customers");
 const filmService = require("../src/routes/films");
@@ -20,5 +21,6 @@ module.exports = function (app) {
   app.use("/api/rentals", rentalService);
   app.use("/api/users", registrationService);
   app.use("/api/auth", authenticationService);
+  app.use("/api/returns", returnService);
   app.use(errorMiddleware);
 };

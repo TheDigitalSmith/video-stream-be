@@ -2,13 +2,13 @@ const request = require('supertest');
 const {Genre} = require('../../src/schema/genre');
 const {User} = require('../../src/schema/user');
 const mongoose = require('mongoose');
-let server
 
-describe('/api/genres',()=>{
+describe('/api/genres', ()=>{
+    let server
     beforeEach(() =>{server = require('../../index'); })
-    afterEach(async ()=>{
-        server.close();
+    afterEach( async ()=>{
         await Genre.remove({});
+        await server.close();
     });
 
     describe('GET /',()=>{
@@ -18,7 +18,7 @@ describe('/api/genres',()=>{
                 {name:'genre1'},
                 {name:'genre2'}
             ]
-            await Genre.collection.insertMany(genres)
+            await Genre.collection.insertMany(genres);
             const res = await request(server).get('/api/films/genre');
 
             expect(res.status).toBe(200); 
@@ -35,7 +35,7 @@ describe('/api/genres',()=>{
             );
             await genre.save()
             const res = await request(server).get('/api/films/genre/' + genre._id);
-            
+
             expect(res.status).toBe(200);
             expect(res.body).toHaveProperty('name',genre.name);
         })
@@ -85,7 +85,7 @@ describe('/api/genres',()=>{
 
         it('should save the genre when the body of the request is valid and the request has a valid token ', async ()=>{
             await exec();
-            const genre = await Genre.find();
+            const genre = await Genre.find({name: name});
             
             expect(genre).not.toBeNull();
         })
@@ -110,11 +110,11 @@ describe('/api/genres',()=>{
             .send({name})
         }
 
-        beforeEach(()=>{
+        beforeEach( async ()=>{
             token = new User().generateAuthToken();
             name = 'genrePUT';
-            endPoint = '/api/films/genre/' + objectId
             objectId = mongoose.Types.ObjectId();
+            endPoint = '/api/films/genre/' + objectId
         })
 
         it('should return a 401 if user is not logged in', async()=>{
