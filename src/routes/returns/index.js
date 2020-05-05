@@ -21,7 +21,7 @@ const auth = require('../../utils/middleware/auth');
 const validate = require('../../utils/middleware/validate');
 
 router.post('/', [auth, validate(validateReturn)] , async(req,res) => {
-    const rental = await Rental.findOne({'customer._id': req.body.customerId, 'film._id': req.body.filmId})
+    const rental = await Rental.lookup(req.body.customerId, req.body.filmId)
     if (!rental) return res.status(404).send('Rental not found');
     if(rental.dateReturned) return res.status(400).send('Rental already in process');
     rental.dateReturned = new Date();
