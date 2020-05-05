@@ -24,9 +24,10 @@ router.post('/', [auth, validate(validateReturn)] , async(req,res) => {
     const rental = await Rental.lookup(req.body.customerId, req.body.filmId)
     if (!rental) return res.status(404).send('Rental not found');
     if(rental.dateReturned) return res.status(400).send('Rental already in process');
-    rental.dateReturned = new Date();
-    const rentalDays = moment().diff(rental.dateOut, 'days')
-    rental.rentalFee = rentalDays * rental.film.dailyRentalRate
+    rental.return()
+    // rental.dateReturned = new Date();
+    // const rentalDays = moment().diff(rental.dateOut, 'days')
+    // rental.rentalFee = rentalDays * rental.film.dailyRentalRate
     await rental.save();
     await Film.update({_id: rental.film._id},{
         $inc:{

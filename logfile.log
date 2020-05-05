@@ -1222,3 +1222,28 @@
 {"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:03:14.020Z"}
 {"level":"info","message":"listening on port 4112","timestamp":"2020-05-05T18:03:15.733Z"}
 {"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:03:15.792Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-05-05T18:03:17.648Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:03:17.770Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-05-05T18:14:10.131Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:14:10.264Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-05-05T18:14:12.277Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:14:12.361Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-05-05T18:14:14.469Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:14:14.563Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-05-05T18:15:27.937Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:15:27.977Z"}
+{"message":"moment is not defined","stack":"ReferenceError: moment is not defined\n    at model.Object.<anonymous>.rentalSchema.methods.return (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\src\\schema\\rental\\index.js:61:24)\n    at C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\src\\routes\\returns\\index.js:27:5\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","level":"error","timestamp":"2020-05-05T18:15:28.311Z"}
+{"message":"moment is not defined","stack":"ReferenceError: moment is not defined\n    at model.Object.<anonymous>.rentalSchema.methods.return (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\src\\schema\\rental\\index.js:61:24)\n    at C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\src\\routes\\returns\\index.js:27:5\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","level":"error","timestamp":"2020-05-05T18:15:28.365Z"}
+{"message":"moment is not defined","stack":"ReferenceError: moment is not defined\n    at model.Object.<anonymous>.rentalSchema.methods.return (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\src\\schema\\rental\\index.js:61:24)\n    at C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\src\\routes\\returns\\index.js:27:5\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","level":"error","timestamp":"2020-05-05T18:15:28.466Z"}
+{"message":"moment is not defined","stack":"ReferenceError: moment is not defined\n    at model.Object.<anonymous>.rentalSchema.methods.return (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\src\\schema\\rental\\index.js:61:24)\n    at C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\src\\routes\\returns\\index.js:27:5\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","level":"error","timestamp":"2020-05-05T18:15:28.529Z"}
+{"message":"moment is not defined","stack":"ReferenceError: moment is not defined\n    at model.Object.<anonymous>.rentalSchema.methods.return (C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\src\\schema\\rental\\index.js:61:24)\n    at C:\\Users\\Tash\\Desktop\\Coding\\Mosh\\practice\\vid-stream-be\\src\\routes\\returns\\index.js:27:5\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)","level":"error","timestamp":"2020-05-05T18:15:28.608Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-05-05T18:15:29.819Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:15:29.856Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-05-05T18:15:31.171Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:15:31.242Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-05-05T18:16:14.375Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:16:14.399Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-05-05T18:16:15.658Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:16:15.911Z"}
+{"level":"info","message":"listening on port 4112","timestamp":"2020-05-05T18:16:17.231Z"}
+{"level":"info","message":"MongoDb connected mongodb://localhost/films_test","timestamp":"2020-05-05T18:16:17.377Z"}
