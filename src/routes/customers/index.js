@@ -1,5 +1,6 @@
 const express = require("express");
-const { Customer, validate } = require("../../schema/customer");
+const validate = require('../../utils/middleware/validate');
+const { Customer, validate: validateCustomer } = require("../../schema/customer");
 
 const router = express.Router();
 
@@ -24,11 +25,8 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.post("/", async (req, res) => {
+router.post("/", validate(validateCustomer), async (req, res) => {
   try {
-    const { error } = validate(req.body);
-    if (error) return res.status(400).send(error.details[0].message);
-
     const newUser = new Customer({ ...req.body });
     await newUser.save();
     res.send(newUser);
@@ -38,11 +36,8 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", validate(validateCustomer),async (req, res) => {
   try {
-    const { error } = validate(req.body);
-    if (error) return res.status(400).send(error.details[0].message);
-
     delete req.body._id;
     const update = await Customer.findByIdAndUpdate(
       req.params.id,

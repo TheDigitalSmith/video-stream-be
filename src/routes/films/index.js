@@ -1,6 +1,7 @@
 const express = require("express");
 const auth = require("../../utils/middleware/auth");
-const { Film, validate } = require("../../schema/films");
+const validate = require('../../utils/middleware/validate');
+const { Film, validate: validateFilm } = require("../../schema/films");
 const { Genre } = require("../../schema/genre");
 
 const router = express.Router();
@@ -16,10 +17,7 @@ router.get("/:id", async (req, res) => {
   res.send(films);
 });
 
-router.post("/", auth, async (req, res) => {
-  const { error } = validate(req.body);
-  if (error) res.status(400).send(error.details[0].message);
-
+router.post("/",[ auth, validate(validateFilm)], async (req, res) => {
   const genre = Genre.findById(req.body.genreId);
   if (!genre) return res.status(400).send("Invalid genre");
 
@@ -41,10 +39,7 @@ router.post("/", auth, async (req, res) => {
   }
 });
 
-router.put("/:id", auth, async (req, res) => {
-  const { error } = validate(req.body);
-  if (error) res.status(400).send(error.details[0].message);
-
+router.put("/:id", [auth, validate(validateFilm)], async (req, res) => {
   const genre = await Genre.findById(req.body.genreId);
   if (!genre) return res.status(400).send("Invalid genre ID");
 

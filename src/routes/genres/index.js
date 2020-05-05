@@ -3,9 +3,10 @@ const auth = require("../../utils/middleware/auth");
 const express = require("express");
 const router = express.Router();
 const Joi = require("joi");
-const { Genre, validate } = require("../../schema/genre");
+const { Genre, validate: validateGenre } = require("../../schema/genre");
 const admin = require("../../utils/middleware/admin");
 const validateObjectId = require('../../utils/middleware/validateObjectId');
+const validate = require('../../utils/middleware/validate');
 // const genres = [
 //     {id: 1, genre:"thriller"},
 //     {id: 2, genre:"action"},
@@ -24,10 +25,7 @@ router.get("/:id", validateObjectId ,async (req, res) => {
   res.send(filmsGenre);
 });
 
-router.post("/", auth, async (req, res) => {
-  const { error } = validate(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
-
+router.post("/", [auth, validate(validateGenre)], async (req, res) => {
   const newGenre = new Genre({
     ...req.body,
   });
@@ -40,10 +38,7 @@ router.post("/", auth, async (req, res) => {
   }
 });
 
-router.put("/:id", auth, async (req, res) => {
-  const { error } = validate(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
-
+router.put("/:id", [auth, validate(validateGenre)], async (req, res) => {
   const genreEdit = await Genre.findByIdAndUpdate(
     req.params.id,
     {
