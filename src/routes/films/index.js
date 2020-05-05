@@ -1,6 +1,8 @@
 const express = require("express");
 const auth = require("../../utils/middleware/auth");
 const validate = require('../../utils/middleware/validate');
+const validateObjectId = require('../../utils/middleware/validateObjectId');
+const admin = require('../../utils/middleware/admin');
 const { Film, validate: validateFilm } = require("../../schema/films");
 const { Genre } = require("../../schema/genre");
 
@@ -11,7 +13,7 @@ router.get("/", async (req, res) => {
   res.send(films);
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", validateObjectId, async (req, res) => {
   const films = await Film.findById(req.params.id);
   if (!films) return res.status(404).send("Film not found");
   res.send(films);
@@ -39,7 +41,7 @@ router.post("/",[ auth, validate(validateFilm)], async (req, res) => {
   }
 });
 
-router.put("/:id", [auth, validate(validateFilm)], async (req, res) => {
+router.put("/:id", [auth, validateObjectId, validate(validateFilm)], async (req, res) => {
   const genre = await Genre.findById(req.body.genreId);
   if (!genre) return res.status(400).send("Invalid genre ID");
 
@@ -58,8 +60,8 @@ router.put("/:id", [auth, validate(validateFilm)], async (req, res) => {
       { new: true }
     );
 
-    if (!updateFilm)
-      return res.status(404).send("Failed to update film, invalid ID");
+    if (!updateFilm) return res.status(404).send("Failed to update film, invalid ID");
+    
     res.send(updateFilm);
   } catch (err) {
     console.log(err);
@@ -67,7 +69,7 @@ router.put("/:id", [auth, validate(validateFilm)], async (req, res) => {
   }
 });
 
-router.delete("/:id", auth, async (req, res) => {
+router.delete("/:id", [validateObjectId, auth, admin], async (req, res) => {
   const remove = await Film.findByIdAndRemove(req.params.id);
   if (!remove) return res.status(404).json("Failed to remove film");
   res.send({ status: "Successfully Removed", film: remove });

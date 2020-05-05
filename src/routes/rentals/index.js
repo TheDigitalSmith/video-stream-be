@@ -1,4 +1,5 @@
 const express = require("express");
+const validateObjectId = require('../../utils/middleware/validateObjectId');
 const { Rental, validateRental } = require("../../schema/rental");
 const { Film } = require("../../schema/films");
 const { Customer } = require("../../schema/customer");
@@ -14,7 +15,7 @@ router.get("/", async (req, res) => {
   res.send(rentals);
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", validateObjectId, async (req, res) => {
   const rental = await Rental.find({});
   if (!rental) return res.status(400).send("Invalid rental ID");
   res.send(rental);

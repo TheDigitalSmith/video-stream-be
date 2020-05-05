@@ -1,5 +1,6 @@
 const express = require("express");
 const validate = require('../../utils/middleware/validate');
+const validateObjectId = require('../../utils/middleware/validateObjectId');
 const { Customer, validate: validateCustomer } = require("../../schema/customer");
 
 const router = express.Router();
@@ -14,7 +15,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", validateObjectId, async(req, res) => {
   try {
     const user = await Customer.findById(req.params.id);
     if (!user) return res.status(404).send("User not found");
@@ -36,7 +37,7 @@ router.post("/", validate(validateCustomer), async (req, res) => {
   }
 });
 
-router.put("/:id", validate(validateCustomer),async (req, res) => {
+router.put("/:id", [validateObjectId, validate(validateCustomer)],async (req, res) => {
   try {
     delete req.body._id;
     const update = await Customer.findByIdAndUpdate(
@@ -53,7 +54,7 @@ router.put("/:id", validate(validateCustomer),async (req, res) => {
   }
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", validateObjectId , async (req, res) => {
   try {
     const userRemoved = await Customer.findByIdAndRemove(req.params.id);
     if (!userRemoved)

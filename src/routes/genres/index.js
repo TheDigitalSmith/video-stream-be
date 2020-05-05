@@ -38,7 +38,7 @@ router.post("/", [auth, validate(validateGenre)], async (req, res) => {
   }
 });
 
-router.put("/:id", [auth, validate(validateGenre)], async (req, res) => {
+router.put("/:id", [validateObjectId, auth, validate(validateGenre)], async (req, res) => {
   const genreEdit = await Genre.findByIdAndUpdate(
     req.params.id,
     {
@@ -53,7 +53,7 @@ router.put("/:id", [auth, validate(validateGenre)], async (req, res) => {
   res.send(genreEdit);
 });
 
-router.delete("/:id", [auth, admin, validateObjectId], async (req, res) => {
+router.delete("/:id", [ validateObjectId, auth, admin], async (req, res) => {
   const genreDelete = await Genre.findByIdAndRemove(req.params.id);
   if (!genreDelete) return res.status(404).send("Genre not found");
   res.send({ status: "removed successfully", genre: genreDelete });

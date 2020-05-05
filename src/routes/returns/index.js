@@ -12,7 +12,7 @@
 //Return the rental
 
 const Joi = require('joi');
-const moment = require('moment');
+// const moment = require('moment');
 const express = require('express');
 const router = express.Router();
 const {Rental} = require('../../schema/rental');
