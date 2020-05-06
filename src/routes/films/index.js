@@ -42,6 +42,7 @@ router.post("/",[ auth, validate(validateFilm)], async (req, res) => {
 });
 
 router.put("/:id", [auth, validateObjectId, validate(validateFilm)], async (req, res) => {
+  delete req.body._id;
   const genre = await Genre.findById(req.body.genreId);
   if (!genre) return res.status(400).send("Invalid genre ID");
 

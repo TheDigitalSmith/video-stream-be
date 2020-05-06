@@ -39,6 +39,7 @@ router.post("/", [auth, validate(validateGenre)], async (req, res) => {
 });
 
 router.put("/:id", [validateObjectId, auth, validate(validateGenre)], async (req, res) => {
+  delete req.body._id;
   const genreEdit = await Genre.findByIdAndUpdate(
     req.params.id,
     {

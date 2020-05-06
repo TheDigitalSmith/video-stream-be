@@ -7,7 +7,7 @@ const auth = require('../../utils/middleware/auth');
 const validate = require('../../utils/middleware/validate');
 
 router.get('/', async(req,res)=>{
-    const users = await User.find({});
+    const users = await User.find({}).select({password:0});
     res.send(users)
 })
 
