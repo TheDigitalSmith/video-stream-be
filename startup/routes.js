@@ -8,13 +8,11 @@ const registrationService = require("../src/routes/user");
 const authenticationService = require("../src/utils/auth");
 const errorMiddleware = require("../src/utils/middleware/error");
 const {auth,log} = require ('../middleware/logger');
-const helmet = require('helmet');
 
 module.exports = function (app) {
   app.use(express.json());
   app.use(log);
   app.use(auth);
-  app.use(helmet());
   app.use("/api/films/genre", genreService);
   app.use("/api/customer", customerService);
   app.use("/api/films", filmService);
