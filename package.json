@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node":"12.6.1",
+    "npm":"6.13.4"
+  },
   "scripts": {
     "test": "jest --watchAll --verbose --runInBand",
     "start": "node index.js"
-  },
-  "engines": {
-    "node":"12.6.1"
   },
   "keywords": [],
   "author": "",
